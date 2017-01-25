@@ -11,9 +11,11 @@ Package.describe({
 });
 
 Package.on_use(function(api) {
+  api.versionsFrom('1.4');
+  api.use('less', 'client');
   api.add_files([
     'dist/jquery.barrating.min.js',
-    'dist/themes/fontawesome-stars.css',
+    'themes/fontawesome-stars.less',
   ], 'client');
 });
 

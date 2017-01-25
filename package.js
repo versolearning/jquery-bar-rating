@@ -15,6 +15,7 @@ Package.on_use(function(api) {
   api.use('less', 'client');
   api.add_files([
     'dist/jquery.barrating.min.js',
+    'themes/variables.less',
     'themes/fontawesome-stars.less',
   ], 'client');
 });
